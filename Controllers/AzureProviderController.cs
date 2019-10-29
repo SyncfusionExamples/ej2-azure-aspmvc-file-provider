@@ -67,8 +67,8 @@ namespace EJ2AzureASPMVCFileProvider.Controllers
             }
             if (args.Path != "")
             {
-                string startPath = "https://ej2filemanager.blob.core.windows.net/files/";
-                string originalPath = ("https://ej2filemanager.blob.core.windows.net/files/Files/").Replace(startPath, "");
+                string startPath = "<--blobPath-->";
+                string originalPath = ("<--filePath-->").Replace(startPath, "");
                 args.Path = (originalPath + args.Path).Replace("//", "/");
             }
             FileManagerResponse uploadResponse;
